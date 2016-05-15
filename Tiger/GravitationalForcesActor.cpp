@@ -69,7 +69,7 @@ void AGravitationalForcesActor::Tick( float DeltaTime )
 			// Gravity is directly proportional to mass
 			float ForceScale = ActorRoot->GetMass() * OtherActorRoot->GetMass();
 
-			// and inversely proportional to distance
+			// and inversely proportional to distance^2
 			float Distance = DeltaLocation.Size();
 			ForceScale /= Distance * Distance; 
 
